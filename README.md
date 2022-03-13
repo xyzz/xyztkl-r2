@@ -20,3 +20,4 @@ CC0 apart from the switch footprints and component STEP models, see LICENSE.txt.
 - dboard: this uses a custom daughterboard; should be 1mm thick. JST cable or pinout **not** compatible with ai03 daughterboard
 - pcb: the included PCB is using STM32F103 (or a compatible clone), you will need an ST-LINK to program the included bootloader; recommend matching the color to the color of the bottom piece if possible; should be 1.6mm thick
 - jst cable: 100mm, reverse orientation (pins 1-4 on one side map to 4-1 on the other) - note that this is the opposite of what ai03 unified daughterboard uses, if you use a wrong cable you risk killing the pcb
+- ALPS support: an alps-compatible PCB and plate files are provided, however they are designed to be used with the Tai Hao alps keyset and an MX spacebar; no compatibility for other layouts is provided
