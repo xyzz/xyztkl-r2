@@ -1,0 +1,238 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small R2
+U 1 1 60AB11C4
+P 2000 1250
+F 0 "R2" H 2059 1296 50  0000 L CNN
+F 1 "5.1k" H 2059 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2000 1250 50  0001 C CNN
+F 3 "~" H 2000 1250 50  0001 C CNN
+F 4 "C23186" H 2000 1250 50  0001 C CNN "LCSC"
+	1    2000 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 60AB11CA
+P 2000 1150
+F 0 "R1" H 2059 1196 50  0000 L CNN
+F 1 "5.1k" H 2059 1105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2000 1150 50  0001 C CNN
+F 3 "~" H 2000 1150 50  0001 C CNN
+F 4 "C23186" H 2000 1150 50  0001 C CNN "LCSC"
+	1    2000 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 60AB11D0
+P 2950 1450
+F 0 "#PWR03" H 2950 1300 50  0001 C CNN
+F 1 "VCC" H 2967 1623 50  0000 C CNN
+F 2 "" H 2950 1450 50  0001 C CNN
+F 3 "" H 2950 1450 50  0001 C CNN
+	1    2950 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3200 1250 0    50   Input ~ 0
+D-
+Text GLabel 3200 1350 0    50   Input ~ 0
+D+
+$Comp
+L Connector_Generic:Conn_01x01 MH1
+U 1 1 60AB11D8
+P 3150 2200
+F 0 "MH1" H 3229 2242 50  0000 L CNN
+F 1 "Mount-M2" H 3229 2151 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3150 2200 50  0001 C CNN
+F 3 "~" H 3150 2200 50  0001 C CNN
+	1    3150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 MH2
+U 1 1 60AB11DE
+P 3150 2350
+F 0 "MH2" H 3229 2392 50  0000 L CNN
+F 1 "Mount-M2" H 3229 2301 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3150 2350 50  0001 C CNN
+F 3 "~" H 3150 2350 50  0001 C CNN
+	1    3150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60AB11E4
+P 1400 3250
+F 0 "R3" V 1193 3250 50  0000 C CNN
+F 1 "1M" V 1284 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1330 3250 50  0001 C CNN
+F 3 "~" H 1400 3250 50  0001 C CNN
+F 4 "C17514" H 1400 3250 50  0001 C CNN "LCSC"
+	1    1400 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60AB11EA
+P 1400 3650
+F 0 "C1" V 1148 3650 50  0000 C CNN
+F 1 "4.7n" V 1239 3650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1438 3500 50  0001 C CNN
+F 3 "~" H 1400 3650 50  0001 C CNN
+F 4 "C53987" H 1400 3650 50  0001 C CNN "LCSC"
+	1    1400 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 3250 1250 3450
+Wire Wire Line
+	1550 3250 1550 3450
+Text GLabel 1150 3450 0    50   Input ~ 0
+SHIELD
+Wire Wire Line
+	1150 3450 1250 3450
+Connection ~ 1250 3450
+Wire Wire Line
+	1250 3450 1250 3650
+$Comp
+L power:GND #PWR06
+U 1 1 60AB11FC
+P 1650 3450
+F 0 "#PWR06" H 1650 3200 50  0001 C CNN
+F 1 "GND" H 1655 3277 50  0000 C CNN
+F 2 "" H 1650 3450 50  0001 C CNN
+F 3 "" H 1650 3450 50  0001 C CNN
+	1    1650 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3450 1550 3450
+Connection ~ 1550 3450
+Wire Wire Line
+	1550 3450 1550 3650
+Text GLabel 2700 2200 0    50   Input ~ 0
+SHIELD
+Wire Wire Line
+	2950 2350 2950 2200
+Wire Wire Line
+	2950 2200 2700 2200
+Connection ~ 2950 2200
+$Comp
+L power:GND #PWR01
+U 1 1 60AB1239
+P 2750 1150
+F 0 "#PWR01" H 2750 900 50  0001 C CNN
+F 1 "GND" H 2755 977 50  0000 C CNN
+F 2 "" H 2750 1150 50  0001 C CNN
+F 3 "" H 2750 1150 50  0001 C CNN
+	1    2750 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1450 3200 1450
+Wire Wire Line
+	3200 1150 2750 1150
+Text GLabel 3400 1650 0    50   Input ~ 0
+SHIELD
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 60AADDC9
+P 1100 1550
+F 0 "J1" H 1207 2417 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1207 2326 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1250 1550 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1250 1550 50  0001 C CNN
+F 4 "C165948" H 1100 1550 50  0001 C CNN "LCSC"
+F 5 "0;0;180" H 1100 1550 50  0001 C CNN "JLCPCB_CORRECTION"
+	1    1100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 60AB68A2
+P 1100 2450
+F 0 "#PWR0101" H 1100 2200 50  0001 C CNN
+F 1 "GND" H 1105 2277 50  0000 C CNN
+F 2 "" H 1100 2450 50  0001 C CNN
+F 3 "" H 1100 2450 50  0001 C CNN
+	1    1100 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 800  2450 3    50   Input ~ 0
+SHIELD
+NoConn ~ 1700 2050
+NoConn ~ 1700 2150
+Wire Wire Line
+	1700 1450 1700 1550
+Wire Wire Line
+	1700 1650 1700 1750
+Text GLabel 1700 1500 2    50   Input ~ 0
+D-
+Text GLabel 1700 1700 2    50   Input ~ 0
+D+
+$Comp
+L power:VCC #PWR0102
+U 1 1 60AB8BE6
+P 1850 950
+F 0 "#PWR0102" H 1850 800 50  0001 C CNN
+F 1 "VCC" H 1865 1123 50  0000 C CNN
+F 2 "" H 1850 950 50  0001 C CNN
+F 3 "" H 1850 950 50  0001 C CNN
+	1    1850 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 950  1850 950 
+Wire Wire Line
+	1700 1150 1900 1150
+Wire Wire Line
+	1700 1250 1900 1250
+$Comp
+L power:GND #PWR0103
+U 1 1 60ABEB87
+P 2250 1250
+F 0 "#PWR0103" H 2250 1000 50  0001 C CNN
+F 1 "GND" H 2255 1077 50  0000 C CNN
+F 2 "" H 2250 1250 50  0001 C CNN
+F 3 "" H 2250 1250 50  0001 C CNN
+	1    2250 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1150 2100 1200
+Wire Wire Line
+	2100 1200 2250 1200
+Wire Wire Line
+	2250 1200 2250 1250
+Connection ~ 2100 1200
+Wire Wire Line
+	2100 1200 2100 1250
+$Comp
+L Connector_Generic_MountingPin:Conn_01x04_MountingPin J2
+U 1 1 60BBDD8D
+P 3400 1250
+F 0 "J2" H 3488 1164 50  0000 L CNN
+F 1 "Conn_01x04_MountingPin" H 3488 1073 50  0000 L CNN
+F 2 "Connector_JST:JST_SH_SM04B-SRSS-TB_1x04-1MP_P1.00mm_Horizontal" H 3400 1250 50  0001 C CNN
+F 3 "~" H 3400 1250 50  0001 C CNN
+F 4 "C160404" H 3400 1250 50  0001 C CNN "LCSC"
+F 5 "0;0;180" H 3400 1250 50  0001 C CNN "JLCPCB_CORRECTION"
+	1    3400 1250
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
